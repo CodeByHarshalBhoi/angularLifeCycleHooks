@@ -62,8 +62,7 @@ console.log("ngAterViewInit hook will be called", this.tempPara);
 
 
   ngOnDestroy(){
-console.log("ngOnChange hook will be call");
-
+    console.log("ngOnChange hook will be call");
   }
 }
 
