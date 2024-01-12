@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularLifeCycleHooks';
+  toDestroy:boolean= false;
+
+
+  inputVal:string='';
+  constructor(){
+    console.log("App Component constructor is called");
+  };
+
+  onBtnClick(inputValel:HTMLInputElement){
+    this.inputVal = inputValel.value
+  }
+
+  onDestroy(){
+    this.toDestroy = !this.toDestroy
+  }
 }
